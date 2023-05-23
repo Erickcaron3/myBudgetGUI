@@ -1,0 +1,91 @@
+body{
+   background-color: green; 
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+   display: flex;
+   align-items: stretch;
+   width: 100%;
+   height: 100%;
+}
+
+#expense-adding-form{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   justify-content: center;
+   align-items: center;
+   background-color: greenyellow; 
+   margin: 10px;
+   border-radius: 5px;
+}
+
+#view-all-expenses-container{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 2;
+   background-color: greenyellow; 
+   margin: 10px;
+   border-radius: 5px;
+}
+
+#expenses-table, #clear-all-expenses{
+   display: none;
+}
+
+
+#expense-adding-form > label, input, select, textarea, button {
+   margin: 5px;
+   border-radius: 5px;
+   padding: 5px;
+}
+
+#expense-adding-form > label {
+   color: green;
+   font-size: 20px;
+   text-align: center;
+   size: 241px;
+}
+
+#expense-adding-form-submit-button, #clear-all-expenses {
+   border-radius: 10px;
+   border-color: white;
+   color:greenyellow;
+   background-color: green;
+   font-size: 25px;
+
+}
+
+#expenses-table{
+   margin: 20px;
+}
+
+table, th, td {
+   border: 1px solid green;
+   border-collapse: collapse;
+}
+
+thead{
+   background-color: green;
+   color: yellowgreen;
+}
+th, td {
+   padding: 10px;
+   }
+
+tr:nth-child(even){
+   background-color: white;
+}
+
+.hidden-id{
+   display: none;
+}
+
+
+
+
+

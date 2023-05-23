@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/css" href="/style/style.css">
+            <title>myBudget Application</title> 
+        </head>
+
+        <body>
+
+            <div id="container">
+
+                <form id="expense-adding-form">
+                    <label class="expense-adding-form" for="total-amount-input">Total amount:</label>
+                    <input type="text" class="expense-adding-form" id="total-amount-input" name="total-amount">
+
+                    <label class="expense-adding-form" for="currency-input">Currency:</label>
+                    <select class="expense-adding-form" id="currency-input" name="currency">
+                        <option value="zł" selected>PLN</option>  
+                        <option value="eur">EUR</option>   
+                    
+                    </select>
+
+                    <label class="expense-adding-form" for="shop-name-input">Shop's name:</label>
+                    <input class="expense-adding-form" type="text" id="shop-name-input" name="shop-name">
+
+                    <label class="expense-adding-form" for="comment">Comment:</label>
+                    <textarea class="expense-adding-form" id="comment" name="comment"></textarea>
+
+                    <label class="expense-adding-form" for="payer-input">Payer:</label>
+                    <select class="expense-adding-form" id="payer-input" name="payer">
+                        <option value="Auguste" selected>Auguste</option>  
+                        <option value="Antoinette">Antoinette</option>   
+                    </select>
+                    <button type="submit" class="expense-adding-form" id="expense-adding-form-submit-button">Save</button>	
+                </form>
+
+                <div id="view-all-expenses-container">    
+                    <span id="no-expense-communicate">There is currently no expense.</span>
+                    
+                        <table id="expenses-table">
+                            <thead>
+                                <tr>
+                                    <th class='hidden-id'>id</th>
+                                    <th>Amount</th>
+                                    <th>Currency</th>
+                                    <th>Shop</th>
+                                    <th>Comment</th>
+                                    <th>Payer</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="expenses-table-body">
+                            </tbody>
+                        </table> 
+                        <button id="clear-all-expenses">Clear all</button>
+                        
+                </div>
+            </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+            <script src="/scripts/index-handler.js" type="module"></script>
+
+        </body>
+    </html>
