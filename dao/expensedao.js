@@ -1,5 +1,3 @@
-import {Expense} from "../models/expense.js";
-
 var expensesArray = [];
 
 function addExpense(expense){
